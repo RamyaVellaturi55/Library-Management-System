@@ -1,0 +1,44 @@
+* {
+    font-family: cursive;
+}
+
+.navbar {
+    background-color: peachpuff;
+
+}
+
+.nav-item .nav-link {
+    font-weight: bold;
+    color: black;
+}
+
+#home {
+    background-image: url(https://wallpapercave.com/wp/wp2036914.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-shadow: white;
+
+}
+.hhead{
+    color: black;
+    text-shadow: 2px 3px 7px white;}
+
+/* Book card image styling */
+.book-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.book-card:hover img {
+    transform: scale(1.2)
+}
+.shadow{
+    margin-top: 20%;
+}

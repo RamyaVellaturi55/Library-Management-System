@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon"
+        href="https://img.freepik.com/premium-photo/book-library-with-old-open-textbook-stack-piles-literature-text-archive-reading-desk_779468-5822.jpg?w=2000">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c1ef17b210.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://img.freepik.com/premium-photo/book-library-with-old-open-textbook-stack-piles-literature-text-archive-reading-desk_779468-5822.jpg?w=2000"
+                    alt="" width="30px">Library</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Catalog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#Fiction">Fiction</a></li>
+                            <li><a class="dropdown-item" href="#Self-Help">Self-Help / Motivation</a></li>
+                            <li><a class="dropdown-item" href="#Technology">Technology / Engineering</a></li>
+                            <li><a class="dropdown-item" href="#Academic">Academic / Study</a></li>
+                            <li><a class="dropdown-item" href="#Biographies">Biographies</a></li>
+                            <li><a class="dropdown-item" href="#Children">Children / Beginners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#issue" tabindex="-1" aria-disabled="true">Issue/Return</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#admin" tabindex="-1" aria-disabled="true">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search Books" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<!-- HOME -->
+<section id="home" class="bg-light py-5" style="margin-top: 3%;">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-md-6">
+                <h1 class="hhead">Welcome to Digital Library</h1>
+                
+                <p class="hhead">
+                    A smart and easy way to manage books, members,
+                    and library services digitally.
+                </p>
+
+                <ul class="list-unstyled">
+                    <li>📚 Wide range of books</li>
+                    <li>📝 Easy registration</li>
+                    <li>🔍 Quick search</li>
+                    <li>⏱️ Issue & return tracking</li>
+                </ul>
+
+                <a href="#Fiction" class="btn btn-success me-2">
+                    Browse Books
+                </a>
+                <a href="#register" class="btn btn-outline-success">
+                    Become a Member
+                </a>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
+                     class="img-fluid rounded shadow"
+                     alt="Library">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- BOOK CATALOG -->
+ <section class="book">
+<section id="Fiction" class="container my-5">
+    <h2 class="text-center mb-4">Book Catalog</h2>
+    <h2 class="mb-4">Fiction</h2>
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card book-card">
+               
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR4j-R4jvLXuACGUidaovbRsPozMDMXE3MfvMaGB9toPW46gpbD8L83KVuTfSQ9nil888dZSQKonNvRs2xQo8cJgKTCKzIMapLF17ZQTUFImM7VrKYRFFza" width="50px" class="card-img-top" >
+                <div class="card-body text-center">
+                    <h5>The Alchemist</h5>
+                    <p>Paulo Coelho</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRgPdEvdSyk0OP2HuVSwAI28fraxhnaBagIMtbaOwwXHgyE-tw_If1dDRoGSROBEFacQFmCaSpkvULGWhRHWYolQXjtcvpcBA" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Harry Potter</h5>
+                    <p>J.K. Rowling</p>
+                    <span class="badge issued">Issued</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://m.media-amazon.com/images/I/61NNJm9WUOL._AC_UF350,350_QL50_.jpg" class="card-img-top" width="50%">
+                <div class="card-body text-center">
+                    <h5>The Kite Runner</h5>
+                    <p>Khaled Hosseini</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRzu3jZqM4VWIkOUcv0fGnOEcpw4CvDELoO7-BA1gJcyT-fMmZwux1kgsOIVwqibYxZPL0mUTRf366qNG7uVQTtSBW29qce-A" class="card-img-top" width="50%">
+                <div class="card-body text-center">
+                    <h5>Life of Pi</h5>
+                    <p>Yann Martel</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSh4FMX-rwA440LWIepCAx_f-45rBwZPb22EjlVTO6ayrINMdiG3Rv1YkvuwM5xFzVAFxE4e8sS55L7QsBC2hSC6UBnamGJ" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>The Book Theif</h5>
+                    <p>Markus Zusak</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+
+<section id="Self-Help" class="container my-5">
+    
+    <h2 class="mb-4">Self-Help / Motivation</h2>
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ38wyppthlXaMxXjFDBJwCrAdYTV1hIQ8ebM7I5iINdnRKOcIMNFkJQWs3m4axFqfAJUtIkK8YBfvWziVRVOwohG5mAI-GfDXUPhRMwWj8mnZlVccgbWWH3w" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Atomic Habits</h5>
+                    <p>James Clear</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://www.theindianbookstore.in/cdn/shop/files/image-070.png?v=1696866627s" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Think and Grow Rich</h5>
+                    <p>Napoleon Hill</p>
+                    <span class="badge issued">Issued</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCjl1JLD85maJnBB9qYoMlaBuDjGl6Ycl88w-DYnGQ6f1RbtOo-h470ayd18OiXe1olPT5FIiPPrymLaBxOu0dmVlAb55iaA" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>The Power of Now</h5>
+                    <p>Eckhart Tolle</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRw_AL2NKS0Ys_A9f1XBORItgMa8x1DNCvYue6ItTPKyE-XLmmYDii8OV20tTu5WEuK7O7UmjTqPszDKrZFc0Za3ZlOLeQvTw" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Rich Dad Poor Dad</h5>
+                    <p>Robert Kiyosaki</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS4n5mWQ3y-doIyLSgrMDOxUPU8GFWUzugxkvHIhPd8T4QeLZvLhJmavuUDS_Q5mVV_jcgRN2e-SfQdY1OYbN75dJwPdiWS" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>The 7 Habits Of Highly Effective People</h5>
+                    <p>Stephen R. Covey</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+<section id="Technology" class="container my-5">
+    
+    <h2 class="mb-4">Technology / Engineering</h2>
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRyTv_z8DY9NjcZAyC7ngsZJ4eK6xKFcBePVBeIWpEA5VAvXEcTaHV6fUnKcJL9SsFH-wBc4QpA3hOF8eTVVDyh53SAFB2S0Q" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Introduction  to Algorithms</h5>
+                    <p>Thomas H.Cormen</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT-9-PdIGCQYgg3QuKojQhSctZXhGAbC6LH70KGWitRJoC5aBuSGfkQoNAIS6Q_-dutRgrHvhe07evPwGZqMwdMo_H2quyy" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Clean Code</h5>
+                    <p>Robert C.Martin</p>
+                    <span class="badge issued">Issued</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSaaw5SL9ifTL-AsjYJKLuIfVOtQhVJ7ofZKvVDyfReauMECmpKgKFbZ4IDsp4X50PgB8C2DfhmVTtwujZVilkr1BJHY52O5d_o0YLoEbVW7G6CDrOGqRXl"class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Digital Electronics</h5>
+                    <p>Morris Mano</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSAljWw8VQ9ua9IsqFlXY0pBDBYR1ZelIDGw3IOvEJrzfFTDi4pI_2DkIwaYyaAqeNtxwkEYf4nDgbrsnHHlxTRMi6uZi6M" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Computer Networks</h5>
+                    <p>Andrew S.Tanenbaum</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT72TLrWjzNFXJt548R-9WWRyeDhIp6sWuGeW9Okmdr4XgdRvZ0pCgLKODNvHyXK5mdYf_5t3a5cY5T0KPpX6l6yih4N2GL" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Artifical Intelligence:A Modern Approach</h5>
+                    <p>Stuart Russell</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+<section id="Academic" class="container my-5">
+    
+    <h2 class="mb-4">Academic / Study</h2>
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRdOxSdogcQQmXx5AY79_cgv1tYJBOYPuB58oPYsLE_UggzaoPd5KUNFEhWBcXEE-sVJrbaGvE3Gzn1PMdze7wRx52g3_aONr2kIpWTQ5B7" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Data Structures Using C</h5>
+                    
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRJC3W2LEusyX29Vy8_Qbja6aB2NX9qsWfFSkmHpZQr4tGWnMhcdkJe0fIq2Ve8M7c8_nln3-z2L_0ln-0-j5HVcFWRa0tNmF5ApV-VVk0" class="card-img-top">
+                <div class="card-body text-center">
+                   <h5>Operating System and Concepts</h5>
+                    
+                    <span class="badge issued">Issued</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSV2R1EpA_ausbL0A0WCIZHdi3GjbFMEn4PqM7yzjgy6SjyKvtIhHaMY9k3UWZ9if6cb6G0_1-dfmbVZ6wyM5UkryS-VqzJ" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Database Management Systems</h5>
+                    
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://m.media-amazon.com/images/I/41Ohmb4nW0L.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Software Engineering - Ian Sommerville</h5>
+                 
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://m.media-amazon.com/images/I/61Lr1C3aIrS.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Signals and Systems</h5>
+                    
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+<section id="Biographies" class="container my-5">
+   
+    <h2 class="mb-4">Biographies</h2>
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSOMkyThNhsbjNDb300I_QxHoakBCU4X9Ch4BZ01klt6IDmWuJ_kv8mjNSwwNRytDt4BVYssw05umi4WgrwU3-OtGhdDdbOApQ7CtN5P7QL8qYJJEGmUeikYw" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Wings of Fire</h5>
+                    <p>A.P.J.Abdul Kalam</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSiM9PkRH1uxvnEFxD5kOxcdjhnFwfxKmFpZZ3VhXA8DwDShboNkjZoRMViPdfjZWwkzcDPlnGJixrqGQJcbvwRLjohRNXF" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Steve Jobs</h5>
+                    <p>Walter Isaacson</p>
+                    <span class="badge issued">Issued</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQdwSbC6u18alTTt1BRaK43qF-08YfFZx3rdprDXceuzWIL6NS8U-NKoS61g0_i6_0ss4khZg3TvF9TlWVEsQkF-Y1F7-EB" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Long Walk to Freedom</h5>
+                    <p>Nelson Mandela</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSsg0A44BFnr2VtKgKnpwPXw2xzDZZ8b05EVVmHBWGbC0PtqA_N2NEZHhgYVOXc0X2ptVebaDKfaPogbsKWWScxYCzMim5W0a3EU3QQHOFrwbLq_0hYxrodzw" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>The Diary of a Young Girl</h5>
+                    <p>Anne Frank</p>
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        
+
+</section>
+<section id="Children" class="container my-5">
+    
+    <h2 class="mb-4">Children / Beginners</h2>
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://m.media-amazon.com/images/I/71eFL-gxJSL._SY522_.jpg"width="50px" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>The Jungle Book</h5>
+                    
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5J2LIN1pRTMroUE0JVNHattZ01LgX9N7U-0ZfkXZUWDI4jXuOU-_rRXyg8KdUTURr7WNt56lGiR3-X4WrHJXld6xKL3w_kaohtJJXS-lRfUuP_2pfI5vQ&usqp=CAc" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Alice in Wonderland</h5>
+                    
+                    <span class="badge issued">Issued</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://m.media-amazon.com/images/I/51trTdAFECL._SX342_SY445_FMwebp_.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Panchatantra Stories</h5>
+                    
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card book-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQjTlDkvd2q1Rh9IurUOR9grJ02gTLcdosF9v5LaKwpQGTcugfFw34-3zMS6_eO1WZjgZIagl_R4PVj06pOZlT2W3DLApps4A" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Tenali Raman Stories</h5>
+                    
+                    <span class="badge available">Available</span>
+                </div>
+            </div>
+        </div>
+</section>
+</section>
+
+<!-- REGISTER -->
+<section id="register" class="container my-5">
+    <h2 class="text-center mb-4">Member Registration</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6 card p-4 shadow">
+            <input class="form-control mb-3" placeholder="Full Name" required>
+            <input class="form-control mb-3" placeholder="Email" required>
+            <input class="form-control mb-3" placeholder="Mobile" required>
+            <select class="form-select mb-3">
+                <option>Student</option>
+                <option>Faculty</option>
+                <option>Public</option>
+            </select>
+            <textarea class="form-control mb-3" placeholder="Address"></textarea>
+            <button class="btn btn-success w-100">Register</button>
+        </div>
+    </div>
+    
+</section>
+
+<!-- ISSUE / RETURN -->
+<section id="issue" class="container my-5">
+    <h2 class="text-center mb-4">Issue / Return</h2>
+    <div class="row g-4">
+        <div class="col-md-6 card p-4 shadow">
+            <h4>Issue Book</h4>
+            <input class="form-control mb-2" placeholder="Member ID">
+            <input class="form-control mb-2" placeholder="Book ID">
+            <input type="date" class="form-control mb-2">
+            <button class="btn btn-success w-100">Issue</button>
+        </div>
+
+        <div class="col-md-6 card p-4 shadow">
+            <h4>Return Book</h4>
+            <input class="form-control mb-2" placeholder="Book ID">
+            <input type="date" class="form-control mb-2">
+            <button class="btn btn-danger w-100">Return</button>
+        </div>
+    </div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" class="container my-5">
+    <h2 class="text-center mb-4">Admin Dashboard</h2>
+
+    <div class="row text-center mb-4">
+        <div class="col-md-4 card p-3 shadow">📚 Total Books <h3>120</h3></div>
+        <div class="col-md-4 card p-3 shadow">📖 Issued <h3>45</h3></div>
+        <div class="col-md-4 card p-3 shadow">👥 Members <h3>78</h3></div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Book</th><th>Member</th><th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>The Alchemist</td><td>Ramya</td><td>Issued</td></tr>
+            <tr><td>Atomic Habits</td><td>Gamya</td><td>Returned</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Contact</h2>
+    <div class="row g-4">
+        <div class="col-md-6 card p-4 shadow">
+            <input class="form-control mb-2" placeholder="Name">
+            <input class="form-control mb-2" placeholder="Email">
+            <textarea class="form-control mb-2" placeholder="Message"></textarea>
+            <button class="btn btn-success w-100">Send</button>
+        </div>
+
+        <div class="col-md-6 card p-4 shadow">
+            <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+            <p><i class="fa-solid fa-phone"></i> 9876543210</p>
+            <p><i class="fa-solid fa-envelope"></i> library@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+ <section style="background-color: black;" class="p-2 text-center">
+        <h6 style="color: white;">&copy; All rights reserved to Library Management System Team,2026</h6>
+     </section>
+<!-- <footer class="bg-dark text-white text-center p-3">
+    © 2026 Library Management System
+</footer> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

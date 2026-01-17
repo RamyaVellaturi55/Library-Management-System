@@ -98,9 +98,9 @@
                 </a>
             </div>
 
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-center image">
                 <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
-                     class="img-fluid rounded shadow"
+                     class="img-fluid rounded shadows"
                      alt="Library">
             </div>
 
@@ -452,11 +452,12 @@
 </section>
 </section>
 
+
 <!-- REGISTER -->
 <section id="register" class="container my-5">
     <h2 class="text-center mb-4">Member Registration</h2>
     <div class="row justify-content-center">
-        <div class="col-md-6 card p-4 shadow">
+        <div class="col-md-6 card p-4 shadows">
             <input class="form-control mb-3" placeholder="Full Name" required>
             <input class="form-control mb-3" placeholder="Email" required>
             <input class="form-control mb-3" placeholder="Mobile" required>
@@ -476,7 +477,7 @@
 <section id="issue" class="container my-5">
     <h2 class="text-center mb-4">Issue / Return</h2>
     <div class="row g-4">
-        <div class="col-md-6 card p-4 shadow">
+        <div class="col-md-6 card p-4 shadows">
             <h4>Issue Book</h4>
             <input class="form-control mb-2" placeholder="Member ID">
             <input class="form-control mb-2" placeholder="Book ID">
@@ -484,7 +485,7 @@
             <button class="btn btn-success w-100">Issue</button>
         </div>
 
-        <div class="col-md-6 card p-4 shadow">
+        <div class="col-md-6 card p-4 shadows">
             <h4>Return Book</h4>
             <input class="form-control mb-2" placeholder="Book ID">
             <input type="date" class="form-control mb-2">
@@ -498,9 +499,9 @@
     <h2 class="text-center mb-4">Admin Dashboard</h2>
 
     <div class="row text-center mb-4">
-        <div class="col-md-4 card p-3 shadow">📚 Total Books <h3>120</h3></div>
-        <div class="col-md-4 card p-3 shadow">📖 Issued <h3>45</h3></div>
-        <div class="col-md-4 card p-3 shadow">👥 Members <h3>78</h3></div>
+        <div class="col-md-4 card p-3 shadows">📚 Total Books <h3>120</h3></div>
+        <div class="col-md-4 card p-3 shadows">📖 Issued <h3>45</h3></div>
+        <div class="col-md-4 card p-3 shadows">👥 Members <h3>78</h3></div>
     </div>
 
     <table class="table table-bordered">
@@ -520,14 +521,14 @@
 <section id="contact" class="container my-5">
     <h2 class="text-center mb-4">Contact</h2>
     <div class="row g-4">
-        <div class="col-md-6 card p-4 shadow">
+        <div class="col-md-6 card p-4 shadows">
             <input class="form-control mb-2" placeholder="Name">
             <input class="form-control mb-2" placeholder="Email">
             <textarea class="form-control mb-2" placeholder="Message"></textarea>
             <button class="btn btn-success w-100">Send</button>
         </div>
 
-        <div class="col-md-6 card p-4 shadow">
+        <div class="col-md-6 card p-4 shadows">
             <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
             <p><i class="fa-solid fa-phone"></i> 9876543210</p>
             <p><i class="fa-solid fa-envelope"></i> library@gmail.com</p>
@@ -536,12 +537,54 @@
 </section>
 
 <!-- footer -->
- <section style="background-color: black;" class="p-2 text-center">
-        <h6 style="color: white;">&copy; All rights reserved to Library Management System Team,2026</h6>
-     </section>
-<!-- <footer class="bg-dark text-white text-center p-3">
-    © 2026 Library Management System
-</footer> -->
+
+<section id="footer" class=" pt-4 color">
+    <div class="container">
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-4 mb-3">
+                <h5>Library Management System</h5>
+                <p>
+                    A digital solution to manage library books,
+                    members, and issue/return operations efficiently.
+                </p>
+            </div>
+
+            <!-- Timings -->
+            <div class="col-md-4 mb-3">
+                <h5>Library Timings</h5>
+                <p>📅 Monday-Friday: 9:00 AM - 6:00 PM</p>
+                <p>📅 Saturday:9:00 AM - 1:00 PM</p>
+                <p>📅 Sunday:Closed</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-3">
+                <h5>Contact</h5>
+                <p>📍 Hyderabad, India</p>
+                <p>📞 +91 9876543210</p>
+                <p>📧 library@gmail.com</p>
+
+                <div>
+                    <a class="colors" href="#" class="text-light me-3"><i class="fab fa-github"></i></a>
+                    <a class="colors" href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                    <a class="colors" href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    <a class="colors" href="#" class="text-light me-3"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="ccolor border border-light">
+
+        <div class="text-center pb-2">
+            <h6 style="color: black;">&copy; All rights reserved to Library Management System Team,2026</h6>
+        </div>
+    </div>
+</section>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

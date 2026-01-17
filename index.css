@@ -39,6 +39,18 @@
 .book-card:hover img {
     transform: scale(1.2)
 }
-.shadow{
-    margin-top: 20%;
+.image{
+    margin-top: 10%;
+}
+.color{
+    background-color: peachpuff;
+    color: black;
+}
+.colors{
+    color: brown;
+}
+.ccolor{
+    /* border: none; */
+    border-top: 2px solid black;
+    /* opacity: 1; */
 }

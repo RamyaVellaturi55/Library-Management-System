@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section id="issue" class="container my-5">
+    <h2 class="text-center mb-4">Issue / Return</h2>
+    <div class="row g-4">
+        <div class="col-md-6 card p-4 shadows">
+            <h4>Issue Book</h4>
+            <input class="form-control mb-2" placeholder="Member ID">
+            <input class="form-control mb-2" placeholder="Book ID">
+            <input type="date" class="form-control mb-2">
+            <button class="btn btn-success w-100">Issue</button>
+        </div>
+
+        <div class="col-md-6 card p-4 shadows">
+            <h4>Return Book</h4>
+            <input class="form-control mb-2" placeholder="Book ID">
+            <input type="date" class="form-control mb-2">
+            <button class="btn btn-danger w-100">Return</button>
+        </div>
+    </div>
+</section>
+    <section id="admin" class="container my-5">
+    <h2 class="text-center mb-4">Admin Dashboard</h2>
+
+    <div class="row text-center mb-4">
+        <div class="col-md-4 card p-3 shadows">📚 Total Books <h3>120</h3></div>
+        <div class="col-md-4 card p-3 shadows">📖 Issued <h3>45</h3></div>
+        <div class="col-md-4 card p-3 shadows">👥 Members <h3>78</h3></div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Book</th><th>Member</th><th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>The Alchemist</td><td>Ramya</td><td>Issued</td></tr>
+            <tr><td>Atomic Habits</td><td>Gamya</td><td>Returned</td></tr>
+        </tbody>
+    </table>
+</section>
+    
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

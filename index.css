@@ -23,8 +23,9 @@ padding: 10px;
 
 }
 .hhead{
-    color: black;
-    text-shadow: 2px 3px 7px white;}
+    color: white;
+    /* text-shadow: 2px 3px 7px white; */
+}
 
 /* Book card image styling */
 .book-card img {
